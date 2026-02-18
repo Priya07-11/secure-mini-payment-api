@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SecurePay - Dashboard</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>SecurePay Dashboard</h1>
+
+    <div class="card">
+      <h2>Make Payment</h2>
+      <input type="number" id="amount" placeholder="Amount">
+      <input type="text" id="currency" placeholder="Currency (USD)">
+      <input type="text" id="merchant" placeholder="Merchant ID">
+      <button onclick="makePayment()">Pay</button>
+    </div>
+
+    <div class="card">
+      <h2>Your Transactions</h2>
+      <button onclick="loadTransactions()">Load Transactions</button>
+      <ul id="transactions"></ul>
+    </div>
+
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
